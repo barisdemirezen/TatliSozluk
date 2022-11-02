@@ -1,0 +1,72 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+:root {
+    --yellow: #E48900;
+}
+
+.border-yellow {
+    border-color: var(--yellow) !important;
+}
+
+.bg-yellow {
+    background: var(--yellow)
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.category {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.category:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.post-content {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.post-author {
+    color: var(--yellow);
+    font-size: 14px;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #888
+}
+
+.post-avatar {
+    width: 40px;
+    height: 40px;
+}

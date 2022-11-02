@@ -1,0 +1,36 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <ul class="list-group list-group-flush">
+                @foreach (var item in Model.TrendingPosts)
+                {
+                    <li class="list-group-item">@item.Title</li>
+                }
+            </ul>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-6">
+            @foreach (var item in Model.LastPosts)
+            {
+                <div class="mb-4">
+                    <div class="post-title">@item.Title</div>
+                    <div class="post-content">dank gind dong jimmy ping pong</div>
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="m-0 text-end post-author">@item.AuthorNick</div>
+                            <div class="m-0 text-end post-date">@item.PostCreateDate.ToString("dd.MM.yyyy mm.HH")</div>
+                        </div>
+                        <div class="col-2">
+                            <img class="img-fluid rounded-circle post-avatar" src="https://faces-img.xcdn.link/image-lorem-face-4845.jpg" />
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
